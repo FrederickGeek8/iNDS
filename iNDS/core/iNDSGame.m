@@ -179,7 +179,7 @@ NSString * const iNDSGameSaveStatesChangedNotification = @"iNDSGameSaveStatesCha
         
         // create image
         CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
-        CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)(bitmapData));
+        CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, bitmapData.bytes, 32*32*4, NULL);
         CGImageRef cgImage = CGImageCreate(32, 32, 8, 32, 32*4, space, kCGImageAlphaLast, provider, NULL, false, kCGRenderingIntentDefault);
         CGDataProviderRelease(provider);
         CGColorSpaceRelease(space);

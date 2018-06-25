@@ -122,7 +122,9 @@
     _controllerElementToButtonIdMapping = nil;
     
     // Allow the screen to turn off again.
-    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+    });
 }
 
 @end
