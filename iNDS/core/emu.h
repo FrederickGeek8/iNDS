@@ -45,6 +45,7 @@ void EMU_setAdvancedBusTiming(bool mode);
 void EMU_setDepthComparisonThreshold(int depth);
 void EMU_setSynchMode(bool enabled);
 void EMU_runCore();
+void EMU_sound();
 int EMU_runOther();
 void EMU_copyMasterBuffer();
 void EMU_pause(bool pause);

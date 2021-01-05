@@ -270,6 +270,9 @@ enum VideoFilter : NSUInteger {
         [[NSRunLoop currentRunLoop] run];
     });
     
+    [NSTimer scheduledTimerWithTimeInterval:1/60 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        EMU_sound();
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

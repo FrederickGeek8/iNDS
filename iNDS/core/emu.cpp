@@ -290,9 +290,9 @@ void EMU_changeSound(int type)
 void EMU_setSynchMode(bool enabled)
 {
     if (enabled == true) {
-        SPU_SetSynchMode(ESynchMode_Synchronous,ESynchMethod_N);
+        SPU_SetSynchMode(ESynchMode_Synchronous,ESynchMethod_P);
     } else {
-        SPU_SetSynchMode(ESynchMode_DualSynchAsynch,ESynchMethod_N);
+        SPU_SetSynchMode(ESynchMode_DualSynchAsynch,ESynchMethod_P);
     }
 }
 
@@ -307,6 +307,10 @@ void EMU_enableSound(bool enabled)
  */
     if (!enabled) SPU_Emulate_user(true);
     soundEnabled = enabled;
+}
+
+void EMU_sound() {
+    if (!soundEnabled) SPU_Emulate_user(true);
 }
 
 void EMU_setFrameSkip(int skip)
@@ -339,7 +343,7 @@ void EMU_runCore()
 	NDS_beginProcessingInput();
 	NDS_endProcessingInput();
 	NDS_exec<false>();
-    if (soundEnabled) SPU_Emulate_user(true);
+//    if (soundEnabled) SPU_Emulate_user(true);
 }
 
 void iNDS_user()

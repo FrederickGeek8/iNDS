@@ -4116,7 +4116,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					BFCFE0EE1764FBD3000A70CF = {
-						DevelopmentTeam = 9DA4RFE7AJ;
+						DevelopmentTeam = MB33R85JX5;
 					};
 				};
 			};
@@ -4770,7 +4770,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
-				DEVELOPMENT_TEAM = 9DA4RFE7AJ;
+				DEVELOPMENT_TEAM = MB33R85JX5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -4818,7 +4818,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
-				DEVELOPMENT_TEAM = 9DA4RFE7AJ;
+				DEVELOPMENT_TEAM = MB33R85JX5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
